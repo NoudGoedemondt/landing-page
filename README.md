@@ -1,1 +1,1 @@
-# landing-page
+# Project landing page from theodinproject.com
