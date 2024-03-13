@@ -1,8 +1,39 @@
-* {
-    outline: auto 1px red;
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
-.site-header {
+main {
+    flex: 1;
     display: flex;
-    margin: 0px;
+    flex-direction: column;
+}
+
+main > .hero {
+    flex: 1;
+    background-color: #1F2937;
+}
+
+main > .info {
+    flex: 1;
+}
+
+main > .quote {
+    background: #E5E7EB;
+    flex: 1;
+}
+
+main > .sign-up {
+    flex: 1;
+}
+
+header, footer {
+    background: #1F2937;
+    height: 50px;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
