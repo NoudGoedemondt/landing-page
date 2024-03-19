@@ -116,6 +116,9 @@ header > .content {
 }
 
 #info-header {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bold;
     text-align: center;
     padding-bottom: 5vh;
 }
