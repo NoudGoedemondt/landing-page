@@ -3,12 +3,9 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-
-    /*Add red outline to all elements
-    outline: red 1px auto;*/
 }
 
-/*Have page content span only 70% of screen*/
+/*have page content span only 60% of screen*/
 .content {
     width: 60%;
 }
@@ -41,6 +38,12 @@ header > .content {
     display: flex;
     list-style: none;
     gap: 20px;
+}
+
+#header-links li a {
+    /* Resetting link styles */
+    text-decoration: none;
+    color: inherit;
 }
 
 /*Hero styling*/
@@ -127,6 +130,7 @@ header > .content {
     height: 200px;
     width: 200px;
     border-radius: 20px;
+    border: 2px solid #3882F6;
 }
 
 .container > * > .subtext {
@@ -137,3 +141,86 @@ header > .content {
 }
 
 /*quote styling*/
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+    /*shrink content*/
+.quote > .content {
+    width: 40%;
+}
+
+.quote > .content > .text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote > .content > .signee {
+    font-size: 18px;
+    color: #1F2937;
+    font-weight: bold;
+    text-align: right;
+}
+
+/*sign-up styling*/
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.sign-up > .content {
+    background-color: #3882F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh;
+    border-radius: 5px;
+}
+
+.action-call > h3 {
+    font-size: 24px;
+    color: #E5E7EB;
+    font-weight: bold;
+}
+
+.action-call > p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.sign-up > .content > button {
+    font-size: 18px;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #F9FAF8;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+/*footer styling*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F2937;
+    height: 80px;
+    width: 100%;
+}
+
+footer > .footer-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
