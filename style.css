@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 
     /*Add red outline to all elements
     outline: red 1px auto;*/
@@ -9,8 +10,7 @@
 
 /*Have page content span only 70% of screen*/
 .content {
-    width: 70%;
-    display: flex;
+    width: 60%;
 }
 
 /*Header styling*/
@@ -24,6 +24,7 @@ header {
 }
 
 header > .content {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -48,8 +49,13 @@ header > .content {
     justify-content: center;
     align-items: center;
     background: #1F2937;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.hero > .content {
+    display: flex;
+    gap: 10vh;
 }
 
 #hero-text {
@@ -59,9 +65,10 @@ header > .content {
 #hero-image {
     flex: 1;
     display: flex;
-    background-color: lightgray;
+    background-color: #878787;
     justify-content: center;
     align-items: center;
+    color: #E5E7EB;
 }
 
 #hero-text h1,
@@ -91,3 +98,42 @@ header > .content {
     border: none;
     border-radius: 5px;
 }
+
+/*info styling*/
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.info > .content {
+    align-items: center;
+}
+
+#info-header {
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.info > .content > .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container > * > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.container > * > .subtext {
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/*quote styling*/
